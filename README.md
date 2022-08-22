@@ -1,6 +1,6 @@
-## Higher-level programming
+## Higher Level Programming
 
-> This repository contains **projects** completed for the high-level progamming course at ALX-Holberton. The languages learnt : `Python`
+> This repository contains **projects** completed for the higher-level progamming course at ALX-Holberton. The languages learnt : `Python`
 
 #### Projects:
 
