@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/95341497/186491359-3441532c-78ff-4d8c-8aaa-95e69c0c0941.png)
 
 
-## Higher Level Programming
+# Higher Level Programming
 
 > This repository contains **projects** completed for the higher-level progamming course at ALX-Holberton. The languages learnt : `Python`
 
