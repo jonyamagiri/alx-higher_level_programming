@@ -46,22 +46,24 @@ Write a function that prints the numbers from `1` to `100` separated by a space.
 * For numbers which are multiples of both three and five print `FizzBuzz`.
 
 #### Task: 13-insert_number.c, lists.h
-Technical interview prep: 
+**Technical interview prep:** 
 Write a function in `C` that inserts a number into a sorted singly linked list.
 * Prototype: `listint_t *insert_node(listint_t **head, int number);`
 * Return: the address of the new node, or `NULL` if it failed
 
+#### Task: 100-print_tebahpla.py
+Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (`z` in lowercase and `Y` in uppercase) , not followed by a new line.
 
+#### Task: 101-remove_char_at.py
+Write a function that creates a copy of the string, removing the character at the position `n` (not the Python way, the “C array index”).
 
-
-
-
-
-
-
-
+#### Task: 102-magic_calculation.py
+Write the Python function `def magic_calculation(a, b, c):` that does exactly the same as the provided Python bytecode:
 
 ___
 
 #### Files:
+
+* [test-files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x01-python-if_else_loops_functions/test-files)
+
 
