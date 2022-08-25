@@ -22,6 +22,21 @@ Write a program that prints all the names defined by the compiled module `hidden
 #### Task: 5-variable_load.py
 Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
 
+#### Task: 100-my_calculator.py
+Write a program that imports all functions from the file `calculator_1.py` and handles basic operations.
+
+#### Task: 101-easy_print.py
+Write a program that prints `#pythoniscool`, followed by a new line, in the standard output.
+* You are not allowed to use `print` or `eval` or `open` or `import sys`
+
+#### Task: 102-magic_calculation.py
+Write the Python function `def magic_calculation(a, b):` that does exactly the same as the provided Python bytecode.
+
+#### Task: 103-fast_alphabet.py
+Write a program that prints the alphabet in uppercase, followed by a new line.
+* Your program should be maximum 3 lines long
+* You are not allowed to use: `any loops, any conditional statements, str.join(), any string literal, any system calls`
+
 
 ___
 
