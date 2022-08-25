@@ -9,8 +9,8 @@ if __name__ == "__main__":
     b = int(argv[3])
     ops = argv[2]
     if ops == "+":
-        sum = add(a, b)
-        print("{:d} {:s} {:d} = {:d}".format(a, ops, b, sum))
+        add = add(a, b)
+        print("{:d} {:s} {:d} = {:d}".format(a, ops, b, add))
     elif ops == "-":
         sub = sub(a, b)
         print("{:d} {:s} {:d} = {:d}".format(a, ops, b, sub))
