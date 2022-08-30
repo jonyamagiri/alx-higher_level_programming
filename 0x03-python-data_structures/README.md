@@ -50,7 +50,9 @@ Write a function in C that checks if a singly linked list is a palindrome.
 * Return: `0` if it is not a palindrome, `1` if it is a palindrome
 * An empty list is considered a palindrome
 
-
+#### Task: 100-print_python_list_info.c
+Create a `C` function that prints some basic info about Python lists.
+* Prototype: `void print_python_list_info(PyObject *p);`
 
 ___
 
