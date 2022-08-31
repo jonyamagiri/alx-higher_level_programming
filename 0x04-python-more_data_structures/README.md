@@ -47,6 +47,18 @@ Create a function def `roman_to_int(roman_string):` that converts a [Roman numer
 * `def roman_to_int(roman_string)` must return an integer
 * If the `roman_string` is not a string or `None`, return `0`
 
+#### Task: 100-weight_average.py
+Write a function that returns the weighted average of all integers tuple `(<score>, <weight>)`
+
+#### Task: 101-square_matrix_map.py
+Write a function that computes the square value of all integers of a matrix using `map`
+
+#### Task: 102-complex_delete.py
+Write a function that deletes keys with a specific value in a dictionary.
+
+#### Task: 103-python.c8-simple_delete.py
+Create two C functions that print some basic info about Python lists and Python bytes objects.
+
 
 ___
 
