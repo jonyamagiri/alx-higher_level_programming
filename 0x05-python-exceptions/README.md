@@ -32,7 +32,7 @@ Write a function that prints an integer.
 Write a function that executes a function safely.
 
 #### Task: 102-magic_calculation.py
-Write the Python function def magic_calculation(a, b): that does exactly the same as the provided Python bytecode.
+Write the Python function `def magic_calculation(a, b):` that does exactly the same as the provided Python bytecode.
 
 #### Task: 103-python.c
 Create three C functions that print some basic info about Python lists, Python bytes an Python float objects.
