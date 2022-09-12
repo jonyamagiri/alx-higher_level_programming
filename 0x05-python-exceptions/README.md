@@ -25,10 +25,23 @@ Write a function that raises a type exception.
 #### Task: 6-raise_exception_msg.py
 Write a function that raises a name exception with a message.
 
+#### Task: 100-safe_print_integer_err.py
+Write a function that prints an integer.
+
+#### Task: 101-safe_function.py
+Write a function that executes a function safely.
+
+#### Task: 102-magic_calculation.py
+Write the Python function def magic_calculation(a, b): that does exactly the same as the provided Python bytecode.
+
+#### Task: 103-python.c
+Create three C functions that print some basic info about Python lists, Python bytes an Python float objects.
+
+
 ___
 
 #### Files:
 
-* []()
+* [test_files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x05-python-exceptions/test_files)
 
 
