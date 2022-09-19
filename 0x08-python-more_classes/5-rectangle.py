@@ -17,6 +17,7 @@ class Rectangle:
         perimeter(self)
         __str__(self)
         __repr__(self)
+        __del__(self)
     """
     def __init__(self, width=0, height=0):
         """Initializes the class."""
