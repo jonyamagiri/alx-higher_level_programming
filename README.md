@@ -15,7 +15,7 @@
 * [0x05-python-exceptions](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x05-python-exceptions)
 * [0x06-python-classes](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x06-python-classes)
 * [0x07-python-test_driven_development]()
-
+* [0x08-python-more_classes]()
 
 
 
