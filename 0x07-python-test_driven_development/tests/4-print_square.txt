@@ -1,0 +1,67 @@
+==============================
+Tests executed with: python3 -m doctest -v ./tests/4-print_square.txt
+==============================
+
+Function prints a square with the character #.
+
+First import method 'print_square'
+    >>> print_square = __import__("4-print_square").print_square
+
+
+Test cases:
+
+Basic usage, single int parameter given:
+    >>> print_square(0)
+
+    >>> print_square(2)
+    ##
+    ##
+
+    >>> print_square(7)
+    #######
+    #######
+    #######
+    #######
+    #######
+    #######
+    #######
+
+Negative parameter or < than 0
+    >>> print_square(-3)
+    Traceback (most recent call last):
+      ...
+    ValueError: size must be >= 0
+
+    >>> print_square(0.7)
+    Traceback (most recent call last):
+      ...
+    TypeError: size must be an integer
+
+Floating point parameter given:
+    >>> print_square(4.3)
+    Traceback (most recent call last):
+      ...
+    TypeError: size must be an integer
+
+Other data types given as parameters (string, list)
+    >>> print_square("eight")
+    Traceback (most recent call last):
+      ...
+    TypeError: size must be an integer
+
+    >>> print_square([2,2])
+    Traceback (most recent call last):
+      ...
+    TypeError: size must be an integer
+
+More than one parameter given:
+    >>> print_square(3, 3)
+    Traceback (most recent call last):
+      ...
+    TypeError: print_square() takes 1 positional argument but 2 were given
+
+No parameter given:
+    >>> print_square()
+    Traceback (most recent call last):
+      ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
