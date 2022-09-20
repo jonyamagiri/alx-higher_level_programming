@@ -1,68 +1,72 @@
 ==============================
-Tests executed with: python3 -m doctest -v ./tests/0-add_integer.txt
+Tests executed with: python3 -m doctest -v ./tests/2-matrix_divided.txt
 ==============================
 
-Parameter "b" has a default value of "98"
-a and b first casted to integers if they are float
-Returns an integer: the addition of a and b
+Function that divides all elements of a matrix.
 
-First import method 'add_integer'
-    >>> add_integer = __import__("0-add_integer").add_integer
+First import method 'matrix_divided'
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
 
 Test cases:
 
-Basic usage with ints and floats:
-    >>> add_integer(3, 5)
-    8
-    >>> add_integer(-6, -9)
-    -15
-    >>> add_integer(-4.9, 15)
-    11
-    >>> add_integer(10.7, 13.5)
-    23
+Basic usage; division with ints and floats:
+    >>> matrix = [[1, 2, 3], [4, 5, 6.7]]
+    >>> matrix_divided(matrix, 5)
+    [[0.2, 0.4, 0.6], [0.8, 1.0, 1.34]]
 
-Use of default input value (b=98):
-    >>> add_integer(11)
-    109
-    >>> add_integer(2.3)
-    100
+    >>> matrix_divided(matrix, 2)
+    [[0.5, 1.0, 1.5], [2.0, 2.5, 3.35]]
 
-Extra parameters entered:
-    >>> add_integer(3, 5, 7)
+    >>> matrix_divided(matrix, 2.934)
+    [[0.34, 0.68, 1.02], [1.36, 1.7, 2.28]]
+
+Division with a string:
+    >>> matrix_divided(matrix, "fifteen")
     Traceback (most recent call last):
       ...
-    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+    TypeError: div must be a number
 
-Other data types entered:
-    >>> add_integer(None)
+Division by zero (0):
+    >>> matrix_divided(matrix, 0)
     Traceback (most recent call last):
       ...
-    TypeError: a must be an integer
+    ZeroDivisionError: division by zero
 
-    >>> add_integer("one", "five")
+Division while missing some or all parameters:
+    >>> matrix_divided(matrix)
     Traceback (most recent call last):
       ...
-    TypeError: a must be an integer
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
-    >>> add_integer([2, 4], [4.5, 7.2])
+    >>> matrix_divided(4)
     Traceback (most recent call last):
       ...
-    TypeError: a must be an integer
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
-    >>> add_integer((5, 10), (13, 25))
+    >>> matrix_divided()
     Traceback (most recent call last):
       ...
-    TypeError: a must be an integer
-    
-Handle very large numbers ('inf' is infinity):
-    >>> add_integer(float("inf"))
-    Traceback (most recent call last):
-      ...
-    OverflowError: cannot convert float infinity to integer
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
-Handle special float ('NaN' is not a number)
-    >>> add_integer(float("NaN"))
+Division with the wrong type (eg with list or tuple):
+    >>> matrix_divided(matrix, (2, 3))
     Traceback (most recent call last):
       ...
-    ValueError: cannot convert float NaN to integer
+    TypeError: div must be a number
+
+    >>> matrix_divided(matrix, [2, 3])
+    Traceback (most recent call last):
+      ...
+    TypeError: div must be a number
+
+Division when rows are of different sizes:
+    >>> matrix_divided([[1, 2], [4, 5, 6]], 4)
+    Traceback (most recent call last):
+      ...
+    TypeError: Each row of the matrix must have the same size
+
+Division when matrix is empty:
+    >>> matrix = []
+    >>> matrix_divided(matrix, 5)
+    []
