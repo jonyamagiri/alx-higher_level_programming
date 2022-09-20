@@ -1,0 +1,14 @@
+==============================
+Tests executed with: python3 -m doctest -v ./tests/5-text_indentation.txt
+==============================
+
+Function prints a text with 2 new lines after each of these characters: ., ? and :
+
+
+First import method 'text_indentation'
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+
+Test cases:
+
+
