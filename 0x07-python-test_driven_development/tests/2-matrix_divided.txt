@@ -1,0 +1,68 @@
+==============================
+Tests executed with: python3 -m doctest -v ./tests/0-add_integer.txt
+==============================
+
+Parameter "b" has a default value of "98"
+a and b first casted to integers if they are float
+Returns an integer: the addition of a and b
+
+First import method 'add_integer'
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+
+Test cases:
+
+Basic usage with ints and floats:
+    >>> add_integer(3, 5)
+    8
+    >>> add_integer(-6, -9)
+    -15
+    >>> add_integer(-4.9, 15)
+    11
+    >>> add_integer(10.7, 13.5)
+    23
+
+Use of default input value (b=98):
+    >>> add_integer(11)
+    109
+    >>> add_integer(2.3)
+    100
+
+Extra parameters entered:
+    >>> add_integer(3, 5, 7)
+    Traceback (most recent call last):
+      ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Other data types entered:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+      ...
+    TypeError: a must be an integer
+
+    >>> add_integer("one", "five")
+    Traceback (most recent call last):
+      ...
+    TypeError: a must be an integer
+
+    >>> add_integer([2, 4], [4.5, 7.2])
+    Traceback (most recent call last):
+      ...
+    TypeError: a must be an integer
+
+    >>> add_integer((5, 10), (13, 25))
+    Traceback (most recent call last):
+      ...
+    TypeError: a must be an integer
+    
+Handle very large numbers ('inf' is infinity):
+    >>> add_integer(float("inf"))
+    Traceback (most recent call last):
+      ...
+    OverflowError: cannot convert float infinity to integer
+
+Handle special float ('NaN' is not a number)
+    >>> add_integer(float("NaN"))
+    Traceback (most recent call last):
+      ...
+    ValueError: cannot convert float NaN to integer
