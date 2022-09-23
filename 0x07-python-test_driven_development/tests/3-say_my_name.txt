@@ -21,17 +21,17 @@ Input type not a string:
     >>> say_my_name(123, "Moscow")
     Traceback (most recent call last):
       ...
-    TypeError: first_name must be a string 
+    TypeError: first_name must be a string
 
     >>> say_my_name("Moscow", 3)
     Traceback (most recent call last):
       ...
-    TypeError: last_name must be a string 
+    TypeError: last_name must be a string
 
     >>> say_my_name("Barack", ["Dr.", "Obama"])
     Traceback (most recent call last):
       ...
-    TypeError: last_name must be a string 
+    TypeError: last_name must be a string
 
 More than 2 parameters given:
     >>> say_my_name("Ontario", "Alberta", "Canada")
@@ -48,4 +48,4 @@ No parameter given:
     >>> say_my_name(None)
     Traceback (most recent call last):
       ...
-    TypeError: first_name must be a string 
+    TypeError: first_name must be a string
