@@ -81,7 +81,7 @@ Division when matrix has other data types:
       ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
     
-    >>> matrix = [["quick", "brown"], ["fox", "jumps"]]  
+    >>> matrix = [["quick"], ["fox"]]  
     >>> matrix_divided(matrix, 4)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
