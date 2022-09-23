@@ -85,7 +85,7 @@ Multiplication given different sized matrices:
 Multiplication given other data types:
     >>> print(lazy_matrix_mul(None, None))
     Traceback (most recent call last):
-    TypeError: Object arrays are not currently supported  
+    TypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType'  
 
     >>> print(lazy_matrix_mul([1, 2], [[3, 4]]))
     Traceback (most recent call last):
@@ -118,4 +118,4 @@ Multiplication when row count of one matrix not equal to column count of other:
     ... ]
     >>> print(lazy_matrix_mul(m_a, m_b))
     Traceback (most recent call last):
-    ValueError: setting an array element with a sequence.   
+    ValueError: setting an array element with a sequence.  
