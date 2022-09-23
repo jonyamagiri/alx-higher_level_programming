@@ -69,4 +69,20 @@ Division when rows are of different sizes:
 Division when matrix is empty:
     >>> matrix = []
     >>> matrix_divided(matrix, 5)
-    []
+    Traceback (most recent call last):
+      ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Division when matrix has other data types:
+    >>> matrix = [[1, 2, 3], ["brown", "fox", "jumps"]]  
+    >>> matrix_divided(matrix, 4)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = [[1, 2], [3, (4, 5)]]
+    >>> matrix_divided(matrix,5)
+    Traceback (most recent call last):
+      ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
