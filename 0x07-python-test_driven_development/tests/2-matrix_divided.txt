@@ -80,6 +80,13 @@ Division when matrix has other data types:
       File "<stdin>", line 1, in <module>
       ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+    
+    >>> matrix = [["quick", "brown"], ["fox", "jumps"]]  
+    >>> matrix_divided(matrix, 4)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
     >>> matrix = [[1, 2], [3, (4, 5)]]
     >>> matrix_divided(matrix,5)
