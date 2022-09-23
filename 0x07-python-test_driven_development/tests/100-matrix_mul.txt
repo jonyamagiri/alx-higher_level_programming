@@ -50,7 +50,6 @@ Multiplication given different sized matrices:
       ...
     TypeError: each row of m_a must be of the same size
 
-
     >>> m_a = [[2, -3], [-10, 12]]
     >>> m_b = [[-5, 23], [4, 5, -9.4]]
     >>> matrix_mul(m_a, m_b)

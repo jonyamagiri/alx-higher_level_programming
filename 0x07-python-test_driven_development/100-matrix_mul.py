@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module 100-matrix_mul.py, with method matrix_mul(m_a, m_b).
-Multiplies 2 matrices:
+Multiplies 2 matrices.
 """
 
 
