@@ -22,7 +22,15 @@ Write a function that prints a text with 2 new lines after each of these charact
 #### Task: tests/6-max_integer_test.py
 In this task, you will write unittests for the function `def max_integer(list=[]):`.
 
+#### Task: 100-matrix_mul.py, tests/100-matrix_mul.txt
+Write a function that multiplies 2 matrices:
+* Resource: [Matrix multiplication - only Matrix product (two matrices)](https://en.wikipedia.org/wiki/Matrix_multiplication)
 
+#### Task: 101-lazy_matrix_mul.py, tests/101-lazy_matrix_mul.txt
+Write a function that multiplies 2 matrices by using the module [NumPy](https://numpy.org/)
+
+#### Task: 102-python.c
+Create a function that prints Python strings.
 
 ___
 
