@@ -11,4 +11,61 @@ First import method 'text_indentation'
 
 Test cases:
 
+Basic usage; single sentence text entered with separation character:
+    >>> text_indentation("Wamlambez?")
+    Wamlambez?
+    <BLANKLINE>
 
+    >>> text_indentation("Congratulations.")
+    Congratulations.
+    <BLANKLINE>
+
+Spaces printed at beginning, within and ending of text:
+    >>> text_indentation("   Did you mean I do hard things?")
+    Did you mean I do hard things?
+    <BLANKLINE>
+
+    >>> text_indentation("More whitespace at the end:      ")
+    More whitespace at the end:
+    <BLANKLINE>
+
+    >>> text_indentation("    It will be messy:    brace yourself.   ")
+    It will be messy:
+    <BLANKLINE>
+    brace yourself.
+    <BLANKLINE>
+
+No text entered, empty:
+    >>> text_indentation("   ")
+
+No separation marks included in text:
+    >>> text_indentation("who was your english teacher   please request for a refund of your fees")
+    who was your english teacher   please request for a refund of your fees
+
+New line characters included in text:
+    >>> text_indentation("A new line \n should start at the end. Here: \n\n")
+    A new line
+    should start at the end.
+    <BLANKLINE>
+    Here:
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+
+Combination of text, separation and new line characters:
+    >>> text_indentation("Lorem ipsum dolor sit amet. Et provident veniam est modi? fugit 33 exercitationem \n\n quasi et culpa velit: Eos saepe aspernatur sit \natque obcaecati quo sequi fugit aut? libero amet eos tempore error sed: deleniti earum sed pariatur consequatur.")
+    Lorem ipsum dolor sit amet.
+    <BLANKLINE>
+    Et provident veniam est modi?
+    <BLANKLINE>
+    fugit 33 exercitationem
+    <BLANKLINE>
+    quasi et culpa velit:
+    <BLANKLINE>
+    Eos saepe aspernatur sit
+    atque obcaecati quo sequi fugit aut?
+    <BLANKLINE>
+    libero amet eos tempore error sed:
+    <BLANKLINE>
+    deleniti earum sed pariatur consequatur.
+    <BLANKLINE>
