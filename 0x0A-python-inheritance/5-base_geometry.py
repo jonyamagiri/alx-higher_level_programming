@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 5-base_geometry.py with an empty class BaseGeomtry.
+Module 5-base_geometry.py with an empty class BaseGeometry.
 """
 
 
