@@ -56,11 +56,6 @@ Given other data types which are not ints:
       ...
     TypeError: checker must be an integer
 
-    >>> bg.integer_validator("checker", False)
-    Traceback (most recent call last):
-      ...
-    TypeError: checker must be an integer
-
 1 or more parameters missing:
     >>> bg.integer_validator()
     Traceback (most recent call last):
