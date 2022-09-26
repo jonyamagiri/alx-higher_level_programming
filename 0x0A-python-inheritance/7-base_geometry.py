@@ -25,7 +25,7 @@ class BaseGeometry:
             name (str): name of the parameter
             value (int): value of the parameter to be validated
         Exceptions:
-            TypeError - if value is not an integer:
+            TypeError - if value is not an integer
             ValueError - if value is less or equal to 0
         """
         if type(value) != int:
