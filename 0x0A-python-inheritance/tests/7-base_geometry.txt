@@ -1,0 +1,86 @@
+==============================
+Tests executed with: python3 -m doctest -v ./tests/7-base_geometry.txt
+==============================
+
+Validates value parameter in method integer_validator in class BaseGeometry 
+
+First import method 'my_list'
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+
+Test cases:
+
+Basic usage, ints > 0 and name is string (success; no return value):
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("checker", 10)
+
+Given ints <= 0:
+    >>> bg.integer_validator("checker", 0)
+    Traceback (most recent call last):
+      ...
+    ValueError: checker must be greater than 0
+
+    >>> bg.integer_validator("checker", -15)
+    Traceback (most recent call last):
+      ...
+    ValueError: checker must be greater than 0
+
+Given other data types which are not ints:
+    >>> bg.integer_validator("checker", None)
+    Traceback (most recent call last):
+      ...
+    TypeError: checker must be an integer
+
+    >>> bg.integer_validator("checker", NULL)
+    Traceback (most recent call last):
+      ...
+    NameError: name 'NULL' is not defined
+
+    >>> bg.integer_validator("checker", "twenty")
+    Traceback (most recent call last):
+      ...
+    TypeError: checker must be an integer
+
+    >>> bg.integer_validator("checker", "137")
+    Traceback (most recent call last):
+      ...
+    TypeError: checker must be an integer
+
+    >>> bg.integer_validator("checker", [4, 5, 7])
+    Traceback (most recent call last):
+      ...
+    TypeError: checker must be an integer
+
+    >>> bg.integer_validator("checker", (9, 11))
+    Traceback (most recent call last):
+      ...
+    TypeError: checker must be an integer
+
+    >>> bg.integer_validator("checker", False)
+    Traceback (most recent call last):
+      ...
+    TypeError: checker must be an integer
+
+1 or more parameters missing:
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+      ...
+    TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> bg.integer_validator(900)
+    Traceback (most recent call last):
+      ...
+    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+    >>> bg.integer_validator("checker",)
+    Traceback (most recent call last):
+      ...
+    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+Testing the area method that was not implemented:
+    >>> bg = BaseGeometry()
+    >>> bg.area()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      ...
+    Exception: area() is not implemented
