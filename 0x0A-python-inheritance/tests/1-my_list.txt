@@ -1,0 +1,44 @@
+==============================
+Tests executed with: python3 -m doctest -v ./tests/1-my_list.txt
+==============================
+
+Inherits list class
+Assumes all parameters given are of tyoe int
+Function prints the list, but sorted (ascending sort)
+
+First import method 'my_list'
+    >>> MyList = __import__("1-my_list").MyList
+
+
+Test cases:
+
+Basic usage, list of unordered positive ints given:
+    >>> my_list = MyList([1, 7, 12, 23, 2, 3])
+    >>> my_list.print_sorted()
+    [1, 2, 3, 7, 12, 23]
+
+Negative unordered ints given as parameters:
+    >>> my_list = MyList([56, 7, -11, 5, -2, 15])
+    >>> my_list.print_sorted()
+    [-11, -2, 5, 7, 15, 56]
+
+Empty list given or no parameters given:
+    >>> my_list = MyList([])
+    >>> my_list.print_sorted()
+    []
+
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+One int parameter given:
+    >>> my_list = MyList([-1579823645])
+    >>> my_list.print_sorted()
+    [-1579823645]
+
+Unordered list with different data types given as parameters:
+    >>> my_list = MyList(["20", "five", 7, 2, 1])
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+      ...
+    TypeError: '<' not supported between instances of 'int' and 'str'
