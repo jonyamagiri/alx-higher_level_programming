@@ -7,7 +7,7 @@ import json
 
 def load_from_json_file(filename):
     """
-    Accepts parameter filename
+    Accepts parameter filename (JSON file).
     Creates an Object from a “JSON file”
     """
     with open(filename, mode="r") as f:
