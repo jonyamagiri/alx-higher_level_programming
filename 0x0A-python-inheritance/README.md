@@ -11,7 +11,7 @@ Write a function that returns the list of available attributes and methods of an
 Write a class `MyList` that inherits from `list`.
 
 #### Task: 2-is_same_class.py
-Write a function that returns `True` if the object is exactly an instance of the specified class ; otherwise `False`.
+Write a function that returns `True` if the object is exactly an instance of the specified class; otherwise `False`.
 
 #### Task: 3-is_kind_of_class.py
 Write a function that returns `True` if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise `False`.
@@ -40,14 +40,19 @@ Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
 #### Task: 11-square.py
 Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`). (task based on `10-square.py`).
 
-#### Task: 
+#### Task: 100-my_int.py
+Write a class `MyInt` that inherits from `int`:
+* `MyInt` is a rebel. `MyInt` has `==` and `!=` operators inverted
 
+#### Task: 101-add_attribute.py
+Write a function that adds a new attribute to an object if it’s possible:
+* Raise a `TypeError` exception, with the message `can't add new attribute` if the object can’t have new attribute
 
 
 ___
 
 #### Files:
 
-* [](
+* [test_files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0A-python-inheritance/test_files)
 
 
