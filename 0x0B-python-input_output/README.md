@@ -40,7 +40,7 @@ Write a class `Student` that defines a student by: (based on `9-student.py`)
 #### Task: 11-student.py
 Write a class `Student` that defines a student by: (based on `10-student.py`)
 
-#### Task: 13-is_palindrome.c, lists.h
+#### Task: 12-pascal_triangle.py
 **Technical interview prep:** 
 Create a function `def pascal_triangle(n):` that returns a list of lists of integers representing the Pascal’s triangle of `n`:
 * Returns an empty list if `n <= 0`
