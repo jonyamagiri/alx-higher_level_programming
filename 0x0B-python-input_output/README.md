@@ -47,16 +47,25 @@ Create a function `def pascal_triangle(n):` that returns a list of lists of inte
 * You can assume `n` will be always an integer
 * You are not allowed to import any module
 
-#### Task: 
+#### Task: 100-append_after.py
+Write a function that inserts a line of text to a file, after each line containing a specific string.
 
-
-#### Task: 
-
+#### Task: 101-stats.py
+Write a script that reads `stdin` line by line and computes metrics:
+* Input format: `<IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>`
+* Each 10 lines and after a keyboard interruption (`CTRL + C`), prints those statistics since the beginning:
+* * Total file size: `File size: <total size>`
+* * where is the sum of all previous (see input format above)
+* * Number of lines by status code:
+* * * possible status code: `200, 301, 400, 401, 403, 404, 405 and 500`
+* * * if a status code doesn’t appear, don’t print anything for this status code
+* * * format: `<status code>: <number>`
+* * * status codes should be printed in ascending order
 
 ___
 
 #### Files:
 
-* []()
+* [test_files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0B-python-input_output/test_files)
 
 
