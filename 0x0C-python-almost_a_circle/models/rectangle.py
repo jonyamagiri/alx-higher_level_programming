@@ -2,12 +2,16 @@
 """
 Module rectangle.py that inherits from Base.
 With private instance attributes width, height, x and y and super class id.
+And method area.
 """
 from models.base import Base
 
 
 class Rectangle(Base):
     """Defines the class Rectangle that inherits from Base.
+    Methods:
+        def __init__(self, width, height, x=0, y=0, id=None)
+        def area(self)
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -80,3 +84,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """Returns the area value of the Rectangle instance"""
+        return self.__width * self.__height
