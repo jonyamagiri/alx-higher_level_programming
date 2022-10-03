@@ -17,9 +17,9 @@ This project reviews everything about Python in readines for the AirBnB project 
 * Unittest
 * Read/Write file
 * In addition:
-* * args and kwargs
-* * Serialization/Deserialization
-* * JSON
+    * args and kwargs
+    * Serialization/Deserialization
+    * JSON
 
 ___
 
