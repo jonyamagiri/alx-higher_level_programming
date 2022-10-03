@@ -2,7 +2,7 @@
 """
 Module rectangle.py that inherits from Base.
 With private instance attributes width, height, x and y and super class id.
-And method area.
+And method area and display.
 """
 from models.base import Base
 
@@ -12,6 +12,7 @@ class Rectangle(Base):
     Methods:
         def __init__(self, width, height, x=0, y=0, id=None)
         def area(self)
+        def display(self)
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -88,3 +89,12 @@ class Rectangle(Base):
     def area(self):
         """Returns the area value of the Rectangle instance"""
         return self.__width * self.__height
+
+    def display(self):
+        """Prints in stdout the Rectangle instance with the character #
+        y is newline, x is space"""
+        if self.__y != 0:
+            for newline in range(self.__y):
+                print()
+        for row in range(self.__height):
+            print((self.__x * " ") + (self.__width * '#'))
