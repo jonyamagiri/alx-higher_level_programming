@@ -2,7 +2,7 @@
 """
 Module rectangle.py that inherits from Base.
 With private instance attributes width, height, x and y and super class id.
-And methods area, display, and str.
+And methods area, display, str, update and to_dictionary
 """
 from models.base import Base
 
@@ -14,6 +14,8 @@ class Rectangle(Base):
         def area(self)
         def display(self)
         def __str__(self)
+        def update(self, *args, **kwargs)
+        def to_dictionary(self)
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -106,11 +108,14 @@ class Rectangle(Base):
                                                 self.id, self.__x, self.__y,
                                                 self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates the class Rectangle by assigning an argument
         to each attribute."""
 
-        if len(args) != 0:
+        if len(kwargs) != 0:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+        elif len(args) != 0:
             try:
                 self.id = args[0]
                 self.__width = args[1]
@@ -121,3 +126,8 @@ class Rectangle(Base):
                 pass
         else:
             print()
+
+    def to_dictionary(self):
+        """Receives kwargs and returns dictionary representation"""
+        return {'x': self.__x, 'y': self__.y, 'id': self.id,
+                'height': self.__height, 'width': self.__width}
