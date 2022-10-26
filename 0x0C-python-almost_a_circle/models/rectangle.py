@@ -129,5 +129,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Receives kwargs and returns dictionary representation"""
-        return {'x': self.__x, 'y': self__.y, 'id': self.id,
+        return {'x': self.__x, 'y': self.__y, 'id': self.id,
                 'height': self.__height, 'width': self.__width}
