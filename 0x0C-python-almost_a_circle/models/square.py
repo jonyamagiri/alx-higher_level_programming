@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module square.py that inherits from Rectangle class.
-With methods init, str, and update.
+With methods init, str, update and to_dictionary.
 """
 from models.rectangle import Rectangle
 
@@ -12,6 +12,7 @@ class Square(Rectangle):
         def __init__(self, size, x=0, y=0, id=None)
         def __str__(self)
         def update(self, *args, **kwargs)
+        def to_dictionary(self)
     """
 
     def __init__(self, size, x=0, y=0, id=None):
@@ -55,3 +56,7 @@ class Square(Rectangle):
                 pass
         else:
             print()
+
+    def to_dictionary(self):
+        """Receives kwargs and returns dictionary representation"""
+        return {'id': self.id, 'x': self.x, 'size': self.width, 'y': self.y}
