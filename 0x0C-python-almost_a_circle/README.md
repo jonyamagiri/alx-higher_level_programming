@@ -4,8 +4,7 @@
 
 ### Background:
 
-This project reviews everything about Python in readines for the AirBnB project whihc is a big part of the Higher level curriculum:
-
+This project reviews everything learnt so far about Python:
 * Import
 * Exceptions
 * Class
@@ -25,6 +24,6 @@ ___
 
 #### Files:
 
-* []()
+* [test_files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle/test_files)
 
 
