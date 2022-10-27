@@ -11,6 +11,7 @@ class Base:
     Methods:
         def __init__(self, id=None)
         def to_json_string(list_dictionaries)
+        def from_json_string(json_string)
         def save_to_file(cls, list_objs)
     """
     __nb_objects = 0
@@ -30,6 +31,14 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returns the list of the JSON string representation"""
+        if type(json_string) != str or len(json_string) == 0:
+            return []
+        else:
+            return json.loads(json_string)
 
     @classmethod
     def save_to_file(cls, list_objs):
