@@ -97,7 +97,7 @@ class TestRectangle(unittest.TestCase):
         rec_1.update(5, 7)
         self.assertEqual(rec_1.__str__(), '[Rectangle] (5) 0/0 - 7/2')
         with self.assertRaises(ValueError):
-            rec_2.update({'id': 1575, 'x': -5})
+            rec_2.update(**{'id': 1575, 'x': -5})
             rec_3.update("a string", None, None)
         rec_4.update(None)
         self.assertEqual(rec_4.__str__(), '[Rectangle] (None) 0/0 - 3/2')

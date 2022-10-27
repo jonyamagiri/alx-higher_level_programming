@@ -63,13 +63,13 @@ class TestBase(unittest.TestCase):
 
         self.assertCountEqual(
             Base.to_json_string(b1),
-            '[{"hi":1, "aye": "hola"}]')
+            '[{"hi": 1, "aye": "hola"}]')
         self.assertCountEqual(Base.to_json_string(b2), '[{"hey": 3}]')
         self.assertCountEqual(Base.to_json_string(b3), '[]')
         self.assertCountEqual(Base.to_json_string(b4), '"an object"')
         with self.assertRaises(TypeError):
             Base.to_json_string(b5)
-        self.assertCountEqual(Base.to_json_string(b6), '[[7, 9. 1]]')
+        self.assertCountEqual(Base.to_json_string(b6), '[[7, 9, 1]]')
         self.assertCountEqual(Base.to_json_string(b7), '[]')
 
     def test_from_json_string(self):
@@ -94,7 +94,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(Base.from_json_string(res_2), b2)
         self.assertEqual(Base.from_json_string(res_3), [])
         self.assertEqual(Base.from_json_string(res_4), b4)
-        self.assertEqual(Base.from_json_string(res_5), [])
+        self.assertEqual(Base.from_json_string(b5), [])
         self.assertEqual(Base.from_json_string(res_6), b6)
         self.assertEqual(Base.from_json_string(res_7), b7)
         self.assertEqual(Base.from_json_string(b1), [])
@@ -105,7 +105,7 @@ class TestBase(unittest.TestCase):
         """Tests create()"""
         bs1 = {'id': 1, 'width': 1, 'height': 2, 'x': 2, 'y': 2}
         rec1 = Rectangle.create(**bs1)
-        self.assertEqual(rec1.__str__(), '[Rectabgle] (1) 2/2 - 1/2')
+        self.assertEqual(rec1.__str__(), '[Rectangle] (1) 2/2 - 1/2')
 
         bs2 = {'id': 2, 'size': 3, 'x': 4, 'y': 5}
         sqr1 = Square.create(**bs2)
