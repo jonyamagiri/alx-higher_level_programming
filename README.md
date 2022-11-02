@@ -21,11 +21,11 @@
 * [0x0B-python-input_output](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0B-python-input_output)
 * [0x0C-python-almost_a_circle]()
 * [0x0D-SQL_introduction]()
+* [0x0E-SQL_more_queries]()
 * []()
 * []()
-
-
-
+* []()
+* []()
 
 
 
