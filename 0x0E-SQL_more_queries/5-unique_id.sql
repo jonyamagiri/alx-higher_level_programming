@@ -3,7 +3,7 @@
 -- if table unique_id already exists, script should not fail
 -- database name passed as an argument of the mysql command
 
-CREATE TABLE IF NOT EXISTS unique_id(
+CREATE TABLE IF NOT EXISTS unique_id (
     id INT DEFAULT 1 UNIQUE,
     name VARCHAR(256)
 );
