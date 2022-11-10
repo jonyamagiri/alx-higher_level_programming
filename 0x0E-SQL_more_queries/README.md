@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/95341497/201103930-a0bb0529-0a5a-4a3a-a1be-daae3afaf1f8.png)
+
+
 ## 0x0E. SQL - More queries
 
 > This repository contains the tasks for `SQL - More queries` project and a description of what each program or function does:
@@ -62,35 +65,22 @@ Import the database dump from hbtn_0d_tvshows to your MySQL server: download (sa
 Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 15-comedy_only.sql)
 * Write a script that lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows.
 
-#### Task: 
+#### Task: 100-not_my_genres.sql
+Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 16-shows_by_genre.sql)
+* Write a script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
 
+#### Task: 101-not_a_comedy.sql
+Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 100-not_my_genres.sql)
+* Write a script that lists all shows without the genre Comedy in the database hbtn_0d_tvshows.
 
-#### Task: 
+#### Task: 102-rating_shows.sql
+Import the database hbtn_0d_tvshows_rate dump to your MySQL server: download
+* Write a script that lists all shows from hbtn_0d_tvshows_rate by their rating.
 
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-
-
+#### Task: 103-rating_genres.sql
+Import the database dump from hbtn_0d_tvshows_rate to your MySQL server: download (same as 102-rating_shows.sql)
+* Write a script that lists all genres in the database hbtn_0d_tvshows_rate by their rating.
 
 
 ___
-
-#### Files:
-
-* []()
-
 
