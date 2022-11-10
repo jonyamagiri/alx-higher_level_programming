@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/95341497/201064455-c9bc069c-54ff-4e13-a24f-2ca946eb51ce.png)
+
+
 ## 0x0D. SQL - Introduction
 
 > This repository contains the tasks for `SQL - Introduction` project and a description of what each program or function does:
