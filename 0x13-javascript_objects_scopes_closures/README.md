@@ -40,29 +40,25 @@ Write a class `Rectangle` that defines a rectangle:
 Write a class `Square` that defines a square and inherits from `Rectangle` of `4-rectangle.js`:
 * You must use the `class` notation for defining your class and `extends`. The constructor must take 1 argument: `size`. The constructor of `Rectangle` must be called (by using `super()`)
 
-#### Task: 
+#### Task: 6-square.js
+Write a class `Square` that defines a square and inherits from `Square` of `5-square.js`:
+* You must use the `class` notation for defining your class and `extends`. Create an instance method called `charPrint(c)` that prints the rectangle using the character `c`. If `c` is `undefined`, use the character `X`
 
+#### Task: 7-occurrences.js
+Write a function that returns the number of occurrences in a list:
+* Prototype: `exports.nbOccurences = function (list, searchElement)`
 
-#### Task: 
+#### Task: 8-esrever.js
+Write a function that returns the reversed version of a list:
+* Prototype: `exports.esrever = function (list)`. You are not allow to use the built-in method `reverse`
 
+#### Task: 9-logme.js
+Write a function that prints the number of arguments already printed and the new argument value. (see example below)
+* Prototype: `exports.logMe = function (item)`. Output format: `<number arguments already printed>: <current argument value>`
 
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
+#### Task: 10-converter.js
+Write a function that converts a number from base 10 to another base passed as argument:
+* Prototype: `exports.converter = function (base)`. You are not allowed to import any file. You are not allowed to declare any new variable (`var`, `let`, etc..)
 
 #### Task: 
 
@@ -70,8 +66,13 @@ Write a class `Square` that defines a square and inherits from `Rectangle` of `4
 #### Task: 
 
 
+#### Task: 
 
 
+#### Task: 
+
+
+#### Task: 
 
 
 
