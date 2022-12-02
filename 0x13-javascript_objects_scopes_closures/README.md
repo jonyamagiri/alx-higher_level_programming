@@ -74,5 +74,6 @@ Write a script that concats 2 files.
 
 ___
 
-[test_files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures/test_files)
+#### Files:
+* [test_files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures/test_files)
 
