@@ -19,8 +19,8 @@ if __name__ == "__main__":
     # cursor to execute queries using SQL; filter names starting with 'N'
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
-    states = cursor.fetchall()
-    for state in states:
-        print(state)
+    for row in cursor.fetchall():
+        if row[1][0] == 'N':
+            print(row)
     cursor.close()
     db.close()
