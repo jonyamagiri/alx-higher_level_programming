@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-return state objects containing letter 'a' from database via python
-parameters given to script: username, password, database
+Lists all State objects that contain the letter a from the
+ database hbtn_0e_6_usa
+Arguments: mysql username, mysql password and database name
 """
 
 import sys
