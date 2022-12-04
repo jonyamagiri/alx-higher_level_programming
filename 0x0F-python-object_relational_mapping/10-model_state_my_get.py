@@ -18,13 +18,17 @@ if __name__ == "__main__":
     db = sys.argv[3]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
                            format(user, password, db), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
+
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State).filter_by(name=argv[4]).first()
-    if state:
-        print("{}".format(state.id))
-    else:
+    found = False
+    for state in session.query(State):
+        if state.name == sys.argv[4]:
+            print("{}".format(state.id))
+            found = True
+            break
+    if found is False:
         print("Not found")
+
     session.close()
