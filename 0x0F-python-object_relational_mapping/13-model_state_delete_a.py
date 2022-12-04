@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-delete from table states with names containing letter 'a'
-parameters given to script: username, password, database
+Deletes all State objects with a name containing the letter a
+ from the database hbtn_0e_6_usa
+Arguments: mysql username, mysql password and database name
 """
 
 import sys
