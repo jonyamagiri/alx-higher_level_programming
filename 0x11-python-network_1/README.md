@@ -67,23 +67,16 @@ Write a Python script that takes in a URL and an email address, sends a `POST` r
 * You don’t need to error check arguments passed to the script (number or type)
 
 #### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
-#### Task: 
-
-
+**Technical interview prep:** 
+Write a Python script that takes 2 arguments in order to solve this challenge:
+```
+Please list 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails” You must use the GitHub API, here is the documentation https://developer.github.com/v3/repos/commits/ Print all commits by: `<sha>: <author name>` (one by line)
+```
+* The first argument will be the `repository name`
+* The second argument will be the `owner name`
+* You must use the packages `requests` and `sys`
+* You are not allowed to import packages other than `requests` and `sys`
+* You don’t need to check arguments passed to the script (number or type)
 
 ___
 
