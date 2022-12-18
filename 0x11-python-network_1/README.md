@@ -70,7 +70,9 @@ Write a Python script that takes in a URL and an email address, sends a `POST` r
 **Technical interview prep:** 
 Write a Python script that takes 2 arguments in order to solve this challenge:
 ```
-Please list 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails” You must use the GitHub API, here is the documentation https://developer.github.com/v3/repos/commits/ Print all commits by: `<sha>: <author name>` (one by line)
+Please list 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails”.
+You must use the GitHub API, here is the documentation https://developer.github.com/v3/repos/commits/ 
+Print all commits by: `<sha>: <author name>` (one by line)
 ```
 * The first argument will be the `repository name`
 * The second argument will be the `owner name`
@@ -80,6 +82,4 @@ Please list 10 commits (from the most recent to oldest) of the repository “rai
 
 ___
 
-#### Files:
-* []()
 
