@@ -33,17 +33,12 @@
 
 #### Task: 6-completed_tasks.js
 
-#### Task: 
+#### Task: 100-starwars_characters.js
 
-#### Task: 
-
-#### Task: 
-
-#### Task: 
-
-#### Task: 
-
+#### Task: 101-starwars_characters.js
 
 ___
+
+* [test_files](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x14-javascript-web_scraping/test_files)
 
 
