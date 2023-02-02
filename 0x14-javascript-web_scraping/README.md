@@ -5,10 +5,10 @@
 
 ### Learning Objectives
 
-	* Why JavaScript programming is amazing
-	* How to manipulate JSON data
-	* How to use `request` and fetch API
-	* How to read and write a file using `fs` module
+* Why JavaScript programming is amazing
+* How to manipulate JSON data
+* How to use `request` and fetch API
+* How to read and write a file using `fs` module
 
 * Web scraping is a process that involves extracting data from websites and other web-based sources. This can be done manually, or with the help of automated software programs known as “web scrapers”. JavaScript is one of the most popular programming languages used for web scraping due to its flexibility and ease of use.
 
