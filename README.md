@@ -3,7 +3,7 @@
 
 # Higher Level Programming
 
-> This repository contains **projects** completed for the higher-level progamming course at ALX-Holberton. The languages learnt : `Python`
+> This repository contains **projects** completed for the higher-level progamming course at ALX-Holberton. The languages learnt : `Python` `MySQL` and `JavaScript`
 
 #### Projects:
 
@@ -22,14 +22,13 @@
 * [0x0C-python-almost_a_circle](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 * [0x0D-SQL_introduction](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
 * [0x0E-SQL_more_queries](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
-* [0x12-javascript-warm_up](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
-* [0x13-javascript_objects_scopes_closures](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
 * [0x0F-python-object_relational_mapping](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x0F-python-object_relational_mapping)
 * [0x10-python-network_0](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x10-python-network_0)
-* [0x11-python-network_1]()
-* [0x14-javascript-web_scraping]()
-* [0x15-javascript-web_jquery]()
+* [0x11-python-network_1](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x11-python-network_1)
+* [0x12-javascript-warm_up](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
+* [0x13-javascript_objects_scopes_closures](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
+* [0x14-javascript-web_scraping](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x14-javascript-web_scraping)
+* [0x15-javascript-web_jquery](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x15-javascript-web_jquery)
 * []()
 * []()
-* []()
-* []()
+
