@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/95341497/186491359-3441532c-78ff-4d8c-8aaa-95e69c0c0941.png)
+![image](https://github.com/jonyamagiri/alx-higher_level_programming/assets/95341497/051efdf9-ce7c-43c0-b69f-ce9e34e9cf87)
 
 
 # Higher Level Programming
