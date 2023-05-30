@@ -29,6 +29,8 @@
 * [0x13-javascript_objects_scopes_closures](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
 * [0x14-javascript-web_scraping](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x14-javascript-web_scraping)
 * [0x15-javascript-web_jquery](https://github.com/jonyamagiri/alx-higher_level_programming/tree/master/0x15-javascript-web_jquery)
-* []()
-* []()
+
+---
+
+
 
